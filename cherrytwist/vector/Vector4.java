@@ -41,4 +41,12 @@ public class Vector4 {
 	public int getW() {
 		return w;
 	}
+	
+	/**
+	 * returns a new string with the values from this vector.
+	 * @return String
+	 */
+	public String toString() {
+		return new String(this.x + ", " + this.y + ", " + this.z + ", " + this.w);
+	}
 }
