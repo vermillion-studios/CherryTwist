@@ -1,5 +1,7 @@
 package cherrytwist.vector;
 
+import java.awt.Color;
+
 public class Vector {
 	/*------------------------------------------------------
 	 *                     ADDITION
@@ -42,7 +44,7 @@ public class Vector {
 	 */
 	
 	/**
-	 * subtracts the values of a vector and returns a new vector with the values added.
+	 * subtracts the values of a vector and returns a new vector with the values subtracted.
 	 * @param a1
 	 * @param a2
 	 * @return
@@ -52,7 +54,7 @@ public class Vector {
 	}
 	
 	/**
-	 * subtracts the values of a vector and returns a new vector with the values added.
+	 * subtracts the values of a vector and returns a new vector with the values subtracted.
 	 * @param a1
 	 * @param a2
 	 * @return
@@ -62,7 +64,7 @@ public class Vector {
 	}
 	
 	/**
-	 * subtracts the values of a vector and returns a new vector with the values added.
+	 * subtracts the values of a vector and returns a new vector with the values subtracted.
 	 * @param a1
 	 * @param a2
 	 * @return
@@ -77,7 +79,7 @@ public class Vector {
 	 */
 	
 	/**
-	 * multiplies the values of a vector and returns a new vector with the values added.
+	 * multiplies the values of a vector and returns a new vector with the values multiplied.
 	 * @param a1
 	 * @param a2
 	 * @return
@@ -87,7 +89,7 @@ public class Vector {
 	}
 	
 	/**
-	 * multiplies the values of a vector and returns a new vector with the values added.
+	 * multiplies the values of a vector and returns a new vector with the values multiplied.
 	 * @param a1
 	 * @param a2
 	 * @return
@@ -97,13 +99,62 @@ public class Vector {
 	}
 	
 	/**
-	 * multiplies the values of a vector and returns a new vector with the values added.
+	 * multiplies the values of a vector and returns a new vector with the values multiplied.
 	 * @param a1
 	 * @param a2
 	 * @return
 	 */
 	public static Vector4 multiply(Vector4 a1, Vector4 a2) {
 		return new Vector4(a1.getX() * a2.getX(), a1.getY() * a2.getY(), a1.getZ() * a2.getZ(), a1.getW() * a2.getW());
+	}
+	
+	/*------------------------------------------------------
+	 *                     DIVISION
+	 *------------------------------------------------------
+	 */
+	
+	/**
+	 * divides the values of a vector and returns a new vector with the values divided.
+	 * @param a1
+	 * @param a2
+	 * @return
+	 */
+	public static Vector2 divide(Vector2 a1, Vector2 a2) {
+		return new Vector2(a1.getX() / a2.getX(), a1.getY() / a2.getY());
+	}
+	
+	/**
+	 * divides the values of a vector and returns a new vector with the values divided.
+	 * @param a1
+	 * @param a2
+	 * @return
+	 */
+	public static Vector3 divide(Vector3 a1, Vector3 a2) {
+		return new Vector3(a1.getX() / a2.getX(), a1.getY() / a2.getY(), a1.getZ() / a2.getZ());
+	}
+	
+	/**
+	 * divides the values of a vector and returns a new vector with the values divided.
+	 * @param a1
+	 * @param a2
+	 * @return
+	 */
+	public static Vector4 divide(Vector4 a1, Vector4 a2) {
+		return new Vector4(a1.getX() / a2.getX(), a1.getY() / a2.getY(), a1.getZ() / a2.getZ(), a1.getW() / a2.getW());
+	}
+	
+	/*------------------------------------------------------
+	 *                       COLORS
+	 *------------------------------------------------------
+	 */
+	
+	/**
+	 * returns a new color with the x y and z values from the vector.
+	 * @param a1
+	 * @return
+	 */
+	public static Color vectorToColor(Vector3 a1) {
+		return new Color(a1.getX(), a1.getY(), a1.getZ());
 	}
 
 }
