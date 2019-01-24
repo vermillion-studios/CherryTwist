@@ -1,0 +1,11 @@
+-------------------------------
+   DRAGONFRUIT LICENSE v1.01
+-------------------------------
+CherryTwist Copyright (c) Vermillion Studio 
+
+With this license you are allowed to use this in your own application(s)
+free of charge.
+Any kind of modification to the source in prohibited.
+
+
+
