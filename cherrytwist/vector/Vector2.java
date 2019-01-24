@@ -23,4 +23,12 @@ public class Vector2 {
 	public int getY() {
 		return y;
 	}
+	
+	/**
+	 * returns a new string with the values from this vector.
+	 * @return String
+	 */
+	public String toString() {
+		return new String(this.x + ", " + this.y);
+	}
 }
