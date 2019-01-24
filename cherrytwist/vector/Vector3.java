@@ -32,4 +32,12 @@ public class Vector3 {
 	public int getZ() {
 		return z;
 	}
+	
+	/**
+	 * returns a new string with the values from this vector.
+	 * @return String
+	 */
+	public String toString() {
+		return new String(this.x + ", " + this.y + ", " + this.z);
+	}
 }
