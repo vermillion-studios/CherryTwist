@@ -1,9 +1,9 @@
 package cherrytwist.vector;
 
 public class Vector4 {
-	private int x, y, z, w;
+	private double x, y, z, w;
 
-	public Vector4(int x, int y, int z, int w) {
+	public Vector4(double x, double y, double z, double w) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
@@ -14,7 +14,7 @@ public class Vector4 {
 	 * returns the x value of this vector.
 	 * @return x
 	 */
-	public int getX() {
+	public double getX() {
 		return x;
 	}
 
@@ -22,7 +22,7 @@ public class Vector4 {
 	 * returns the y value of this vector.
 	 * @return y
 	 */
-	public int getY() {
+	public double getY() {
 		return y;
 	}
 
@@ -30,7 +30,7 @@ public class Vector4 {
 	 * returns the z value of this vector.
 	 * @return z
 	 */
-	public int getZ() {
+	public double getZ() {
 		return z;
 	}
 
@@ -38,7 +38,15 @@ public class Vector4 {
 	 * returns the y value of this vector.
 	 * @return w
 	 */
-	public int getW() {
+	public double getW() {
 		return w;
+	}
+	
+	/**
+	 * returns a new string with the values from this vector.
+	 * @return String
+	 */
+	public String toString() {
+		return new String(this.x + ", " + this.y + ", " + this.z + ", " + this.w);
 	}
 }
