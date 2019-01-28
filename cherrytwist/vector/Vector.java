@@ -50,7 +50,7 @@ public class Vector {
 	 * @return
 	 */
 	public static Vector2 subtract(Vector2 a1, Vector2 a2) {
-		return new Vector2(a1.getX() + a2.getX(), a1.getY() + a2.getY());
+		return new Vector2(a1.getX() - a2.getX(), a1.getY() - a2.getY());
 	}
 	
 	/**
@@ -60,7 +60,7 @@ public class Vector {
 	 * @return
 	 */
 	public static Vector3 subtract(Vector3 a1, Vector3 a2) {
-		return new Vector3(a1.getX() + a2.getX(), a1.getY() + a2.getY(), a1.getZ() + a2.getZ());
+		return new Vector3(a1.getX() - a2.getX(), a1.getY() - a2.getY(), a1.getZ() - a2.getZ());
 	}
 	
 	/**
