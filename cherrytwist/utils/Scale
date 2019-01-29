@@ -1,0 +1,103 @@
+package cherrytwist.utils;
+
+import cherrytwist.vector.Vector3;
+
+public class Scale extends Vector3 {
+	private double x, y, z;
+	
+	public Scale(double x, double y, double z) {
+		super(x, y, z);
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
+
+	/**
+	 * sets the x value of a scale.
+	 * @param x
+	 */
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	/**
+	 * sets the y value of a scale.
+	 * @param y
+	 */
+	public void setY(double y) {
+		this.y = y;
+	}
+	
+	/**
+	 * sets the z value of a scale.
+	 * @param z
+	 */
+	public void setZ(double z) {
+		this.z = z;
+	}
+
+	/**
+	 * returns the x value of a scale.
+	 */
+	@Override
+	public double getX() {
+		return this.x;
+	}
+
+	/**
+	 * returns the y value of a scale.
+	 */
+	public double getY() {
+		return this.y;
+	}
+
+	/**
+	 * returns the z value of a scale.
+	 */
+	public double getZ() {
+		return this.z;
+	}
+	
+	/**
+	 * adds 1 onto the x value of a scale.
+	 */
+	public void upX() {
+		this.x = this.x + 1;
+	}
+	
+	/**
+	 * adds 1 onto the y value of a scale.
+	 */
+	public void upY() {
+		this.x = this.x + 1;
+	}
+	
+	/**
+	 * adds 1 onto the z value of a scale.
+	 */
+	public void upZ() {
+		this.x = this.x + 1;
+	}
+	
+	/**
+	 * adds 1 onto the x value of a scale.
+	 */
+	public void downx() {
+		this.x = this.x - 1;
+	}
+	
+	/**
+	 * adds 1 onto the y value of a scale.
+	 */
+	public void downY() {
+		this.y = this.y - 1;
+	}
+	
+	/**
+	 * adds 1 onto the z value of a scale.
+	 */
+	public void downZ() {
+		this.z = this.z - 1;
+	}
+
+}
