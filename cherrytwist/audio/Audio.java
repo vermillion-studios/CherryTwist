@@ -51,12 +51,7 @@ public class Audio {
             line = (TargetDataLine) AudioSystem.getLine(info);
             line.open(format);
             line.start();   // start capturing
- 
-            System.out.println("Started capturing...");
- 
             AudioInputStream ais = new AudioInputStream(line);
- 
-            System.out.println("Started recording...");
  
             // start recording
             AudioSystem.write(ais, fileType, wavFile);
@@ -71,10 +66,9 @@ public class Audio {
     /**
      * Closes the target data line to finish capturing and recording
      */
-    void finish() {
+    private void finish() {
         line.stop();
         line.close();
-        System.out.println("Finished");
     }
  
     /**
